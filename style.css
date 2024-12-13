@@ -9,6 +9,8 @@ body{
 }   
 .bateau img{
     height: 200px;
+    animation: opacity 4s;
+    animation-delay: 5s;
 }
 .boiterequin{
     display: flex;
@@ -30,6 +32,17 @@ body{
     }
     100%{
         transform:translate(1420px)  
+    }
+}
+@keyframes opacity{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
     }
 }
 @keyframes requin{
