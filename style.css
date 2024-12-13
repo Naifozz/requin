@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: space-between;
+}
+.bateau{
+    display: flex;
+    align-items: center;
+    animation: boat 9s;
+}   
+.bateau img{
+    height: 200px;
+}
+.boiterequin{
+    display: flex;
+    z-index: 1;
+    animation: requin 5s;
+    animation-delay: 4s;
+}
+.boiterequin img{
+    height: 400px;
+    width: 700px;
+}
+.requin2{
+    display: none;
+}
+
+@keyframes boat{
+    0% {
+        transform:translate(0)
+    }
+    100%{
+        transform:translate(1420px)  
+    }
+}
+@keyframes requin{
+    0%{
+        content: url(requin2.png);
+    }
+    100%{
+        content: url(requin1.png);
+    }
+}
